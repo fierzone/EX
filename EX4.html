@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h2{color: blue;}
+        button{margin-left: 120px;}
+        input{margin-bottom:20px;}
+        h3{font-style: italic}
+    </style>
+</head>
+<body>
+<h2>Calculate the area of the rectangle</h2>
+<label>Enter to a:</label>
+<input type="number" id="a" placeholder="Enter to a"><br>
+<label>Enter to b:</label>
+<input type="number" id="b" placeholder="Enter to b"><br>
+<label>Unit:</label>
+<input type="text" id="c" placeholder="Unit"><br>
+<button onclick="getdata()">Click</button>
+<h3 id="result"></h3>
+
+<script>
+    function getdata(){
+        let a=+document.getElementById('a').value;
+        let b=+document.getElementById('b').value;
+        let c=document.getElementById('c').value;
+        let area=a*b;
+        document.getElementById('result').innerHTML='dien tich hinh chu nhat :'+area+c}
+</script>
+</body>
+</html>

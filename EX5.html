@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h2{color: blue;}
+        button{margin-left: 120px;}
+        input{margin-bottom:20px;}
+        h3{font-style: italic}
+    </style>
+</head>
+<body>
+<h2>Tinh dien tich tam giac vuong </h2>
+<label>Nhap vao canh a:</label>
+<input type="number" id="a" placeholder="canh a"><br>
+<label>Nhap vao canh b:</label>
+<input type="number" id="b" placeholder="canh b"><br>
+<label>Don vi tinh:</label>
+<input type="text" id="c" placeholder="don vi tinh"><br>
+<button onclick="getdata()">Click</button>
+<h3 id="result"></h3>
+
+<script>
+    function getdata(){
+        let a=+document.getElementById('a').value;
+        let b=+document.getElementById('b').value;
+        let c=document.getElementById('c').value;
+        let area=(a*b)/2;
+        document.getElementById('result').innerHTML='dien tich tam giac vuong :'+area+c}
+</script>
+</body>
+</html>
